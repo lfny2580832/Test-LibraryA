@@ -57,7 +57,7 @@ fi
 mkdir -p "${INSTALL_DIR}"
 
 #build之前clean一下
-xcodebuild -project LibA.xcodeproj -target ${target_Name} clean
+xcodebuild -target ${target_Name} clean
 
 #模拟器build
 #-target不指定默认构建第一个target，没有其他action时默认build
