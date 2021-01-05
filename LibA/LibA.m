@@ -11,5 +11,6 @@
 @implementation LibA
 - (void)printLib{
     NSLog(@"LibA方法在运行");
+    int a = 1;
 }
 @end

@@ -31,7 +31,7 @@ DEVICE_DIR_A=${build_DIR}/Release-iphoneos/lib${target_Name}.a
 SIMULATOR_DIR_A=${build_DIR}/Release-iphonesimulator/lib${target_Name}.a
 
 #目标文件夹路径，=========此处需指定========
-INSTALL_DIR=${SRCROOT}/../LibAFramework
+INSTALL_DIR=${SRCROOT}/Product
 
 #目标头文件文件夹路径
 INSTALL_DIR_Headers=${INSTALL_DIR}/Headers
@@ -86,4 +86,3 @@ lipo -create "${DEVICE_DIR_A}" "${SIMULATOR_DIR_A}" -output "${INSTALL_DIR_A}"
 
 #删除build文件夹
 rm -rf "${build_DIR}"
-
